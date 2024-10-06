@@ -254,7 +254,7 @@ const saveLocalstorage = () => {
 
 async function loadJson() {
     try {
-        const productsList = await fetch('products.json');
+        const productsList = await fetch('json/products.json');
         if (!productsList.ok) {
             throw new Error(`HTTP error! status: ${productsList.status}`);
         }
