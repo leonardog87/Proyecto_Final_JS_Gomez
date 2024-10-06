@@ -1,0 +1,18 @@
+/* RESET */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+}
+
+.core-container {
+    background-color: transparent;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}

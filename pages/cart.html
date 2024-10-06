@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>cart</title>
+</head>
+
+<body>
+    <div class="cart-container" id="cartContainer">
+        <div class="cart-header">
+            <div class="cart-title">
+                <p>MI COMPRA</p>
+            </div>
+            <div class="cart-close">
+                <a onclick="ocultar();"><img src="../assets/icons/close.png" alt="img-list1"></a>
+            </div>
+        </div>
+        <div id="webCart" class="cart-product">
+            <div class="product-card">
+                <div class="product-card-img">
+                    <img src="../assets/images/running-black-skyblue.png" alt="runnig-yellow">
+                </div>
+                <div class="product-card-text">
+                    <div class="product-card-text-component_tittle">
+                        <p>Title</p>
+                    </div>
+                    <div class="product-card-text-component_description">
+                        <p>Lorem ipsum dolor sit amet consectetur</p>
+                    </div>
+                    <div class="product-card-text-component_price">
+                        <p>$ 5.700</p>
+                    </div>
+                </div>
+                <div class="product-card-buttons">
+                    <div class="tacho">
+                        <img src="../assets/icons/delete_16.png" alt="img-list1">
+                    </div>
+                    <div class="cantidad" id="quantyBox">
+                        <img src="../assets/icons/minus-16.png" alt="icon-minus16" id="icon-minus" class="icon-minus">
+                        <input class="cantidadcart" type="number">
+                        <img src="../assets/icons/plus-16.png" alt="icon-plus16" id="icon-plus" class="icon-plus">
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="cart-bottom">
+
+            <div class="cart-total">
+                <h3>Total</h3>
+                <h3>$455.890</h3>
+            </div>
+            <div class="product-detail-description-talles_buyit_button-2">
+                <input id="buyEnd" type="button" value="Finalizar Compra">
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="header-text">
+            <div class="carousel">
+                <div class="slide">
+                    <p>Veni a conocer nuestro showroom</p>
+                </div>
+                <div class="slide">
+                    <p>Hasta 6 cuotas sin interés</p>
+                </div>
+                <div class="slide">
+                    <p>Tenemos lo que estas buscando!</p>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="nav-logo">
+                <a href="../index.html"><img src="../assets/icons/logo.png" alt="nav-logo"></a>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="calzado.html">Calzado</a></li>
+                    <li><a href="hombre.html">Hombre</a></li>
+                    <li><a href="mujer.html">Mujer</a></li>
+                    <li><a href="#!">Accesorios</a></li>
+                </ul>
+            </div>
+            <div class="nav-menu">
+                <div class="nav-menu-icons">
+                    <div class="nav-search">
+                        <input type="text" placeholder="Search">
+                        <a href="#!"><img src="../assets/icons/icon_search.png" alt="img-list1"></a>
+                    </div>
+                    <div class="nav-icons">
+                        <div class="nav-search-login">
+                            <a href="#!"><img src="../assets/icons/user_img.png" alt="user-img"></a>
+                        </div>
+                        <div class="nav-search-login">
+                            <a onclick="mostrar();"><img src="../assets/icons/buy-img.png" alt="buy-img"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+
+
+    </main>
+    <footer>
+        <div class="footer-politics">
+            <ul>
+                <li><a href="#!">Sobre nosotros</a></li>
+                <li><a href="#!">Términos y condiciones</a></li>
+                <li><a href="#!">Políticas de privacidad</a></li>
+                <li><a href="#!">Reclamos</a></li>
+            </ul>
+        </div>
+        <div class="footer-rights">
+            <p>© 2024 SNEAKERS Online Argentina</p>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

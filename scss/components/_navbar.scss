@@ -1,0 +1,125 @@
+// NAVBAR
+nav {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, auto);
+    border-bottom: 1px solid rgb(222, 221, 221);
+    padding-bottom: 5px;
+    justify-items: center;
+
+    .nav-logo {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        img {
+            height: 100px;
+            width: 100%;
+        }
+    }
+
+    .nav-links {
+        height: 100%;
+        width: 100%;
+        background-color: transparent;
+        display: flex;
+        @include flex-center;
+        font-size: 20px;
+        padding: 2.5%;
+
+        ul {
+            display: flex;
+            @include flex-center;
+            flex-direction: column;
+            list-style: none;
+            gap: 5px;
+            width: 100%;
+
+            li {
+                word-break: break-word;
+
+                a {
+                    color: black;
+                    text-decoration: none;
+
+                    &:hover {
+                        padding-bottom: 3px;
+                        border-bottom: 2px solid rgba(0, 0, 0, 0.617);
+                    }
+                }
+            }
+        }
+    }
+
+    .nav-menu {
+        height: 100%;
+        width: 100%;
+
+        .nav-menu-icons {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: transparent;
+
+            .nav-search {
+                height: 30px;
+                width: 100%;
+                border: 1px solid rgb(174, 174, 174);
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                background-color: rgb(239, 239, 239);
+                gap: 10px;
+                margin-bottom: 10px;
+
+                input {
+                    border-radius: 0px;
+                    outline: none;
+                    border: none;
+                    height: 29px;
+                    width: 100%;
+                    background-color: transparent;
+                    color: black;
+                    font-size: 17px;
+
+                    &::placeholder {
+                        color: rgb(62, 62, 62);
+                    }
+                }
+
+                img {
+                    position: relative;
+                    width: 23px;
+                    height: 23px;
+                    background-color: transparent;
+                    top: 2px;
+                }
+            }
+
+            .nav-icons {
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+                flex-wrap: wrap;
+
+                .nav-search-login {
+                    height: 30px;
+                    cursor: pointer;
+
+                    img {
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+            }
+        }
+
+    }
+
+}

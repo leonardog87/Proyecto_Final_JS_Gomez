@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>SNEAKERS Online</title>
+</head>
+
+<body>
+    <div class="cart-container" id="cartContainer">
+        <div class="cart-header">
+            <div class="cart-title">
+                <p>MI COMPRA</p>
+            </div>
+            <div class="cart-close">
+                <a onclick="hideCart();"><img src="assets/icons/close.png" alt="img-list1"></a>
+            </div>
+        </div>
+        <div id="webCart" class="cart-product">
+        </div>
+        <div class="cart-bottom">
+            <div class="cart-total">
+                <h3>Total</h3>
+                <h3 id="totalCart">$ 0</h3>
+            </div>
+            <div class="product-detail-description-talles_buyit_button-2">
+                <input id="endBuyButton" type="button" value="Finalizar Compra">
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="header-text">
+            <div class="carousel">
+                <div class="slide">
+                    <p id="texto">Veni a conocer nuestro showroom</p>
+                </div>
+                <div class="slide">
+                    <p>Hasta 6 cuotas sin interés</p>
+                </div>
+                <div class="slide">
+                    <p>Tenemos lo que estas buscando!</p>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="nav-logo">
+                <a href="index.html"><img src="assets/icons/logo.png" alt="nav-logo"></a>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#!">Calzado</a></li>
+                    <li><a href="#!">Hombre</a></li>
+                    <li><a href="#!">Mujer</a></li>
+                    <li><a href="#!">Accesorios</a></li>
+                </ul>
+            </div>
+            <div class="nav-menu">
+                <div class="nav-menu-icons">
+                    <div class="nav-search">
+                        <input type="text" placeholder="Search" id="navSearch">
+                        <a href="#!"><img src="assets/icons/icon_search.png" alt="img-list1"></a>
+                    </div>
+                    <div class="nav-icons">
+                        <div class="nav-search-login">
+                            <a href="#!"><img src="assets/icons/user_img.png" alt="user-img"></a>
+                        </div>
+                        <div class="nav-search-login">
+                            <a onclick="showCart();"><img src="assets/icons/buy-img.png" alt="buy-img"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="core-container">
+            <div class="index-banner">
+            </div>
+            <div class="index-carousel-container">
+                <button class="pre-btn"> <img src="assets/icons/arrow-left-32.png" alt="pre-btn-img"></button>
+                <button class="nxt-btn"> <img src="assets/icons/arrow-left-32.png" alt="next-btn-img"></button>
+                <div class="index-carousel" id="indexCarousel">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-politics">
+            <ul>
+                <li><a href="#!">Sobre nosotros</a></li>
+                <li><a href="#!">Términos y condiciones</a></li>
+                <li><a href="#!">Políticas de privacidad</a></li>
+                <li><a href="#!">Reclamos</a></li>
+            </ul>
+        </div>
+        <div class="footer-rights">
+            <p>© 2024 SNEAKERS Online Argentina</p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>

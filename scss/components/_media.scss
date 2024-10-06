@@ -1,0 +1,421 @@
+// 320
+@media (min-width: 320px) {
+    nav {
+        .nav-logo {
+            img {
+                width: 150px;
+            }
+        }
+
+        .nav-menu {
+            .nav-menu-icons {
+                .nav-search {
+                    width: 230px;
+
+                    input {
+                        width: 165px;
+                    }
+                }
+
+                .nav-icons {
+                    flex-wrap: nowrap;
+                }
+            }
+        }
+    }
+
+    //index
+    .core-container {
+        .index-carousel-container {
+            .index-carousel {
+                .product-card {
+                    .product-card-text {
+                        width: 98%;
+                    }
+                }
+            }
+        }
+    }
+
+    .core-header {
+        .core-header-order-filter {
+            input[type=button] {
+                width: 180px;
+            }
+        }
+    }
+
+    .product-gallery-container {
+        width: 300px;
+
+        .product-card {
+            height: 402px;
+            width: 300px;
+
+            &:hover {
+                border: 1px solid black;
+            }
+
+            .product-card-img {
+                background-color: #eceff1;
+            }
+
+            .product-card-text {
+                height: 125px;
+                width: 98%;
+            }
+        }
+    }
+}
+
+// 480
+@media (min-width: 480px) {
+    nav {
+        .nav-links {
+            padding-top: 3%;
+
+            ul {
+                flex-direction: row;
+                gap: 5%;
+            }
+        }
+
+        .nav-menu {
+            .nav-menu-icons {
+                height: 70px;
+                flex-direction: row;
+                justify-content: center;
+                gap: 1%;
+
+                .nav-search {
+                    margin-bottom: 0;
+                }
+
+                .nav-icons {
+                    gap: 0px;
+                }
+            }
+        }
+    }
+
+    footer {
+        height: 80px;
+
+        .footer-politics {
+            ul {
+                flex-direction: row;
+                gap: 30px;
+            }
+        }
+    }
+}
+
+// 665
+@media (min-width: 665px) {
+    //index
+
+    //calzado
+    .core-header {
+        .core-header-order-filter {
+            flex-direction: row;
+        }
+    }
+
+    .product-gallery-container {
+        grid-template-columns: repeat(2, 1fr);
+        width: 645px;
+        justify-items: center;
+        //setear tamaño de la imagen con menos px en esta resolucion, sino con el border rompe y hay que sumar pixeles al @media
+        //se PODRIA (no es necesario) setear un tamaño de menor px a las imagenes y a las cards para que la resolucion del @media sea menor. (FUNCIONA TODO SIN ROMPER IGUALMENTE)
+    }
+
+
+}
+
+// 780
+@media (min-width: 780px) {
+    nav {
+        .nav-links {
+            height: 70px;
+        }
+
+        .nav-menu {
+            height: 70px;
+        }
+    }
+
+    //calzado
+    .product-gallery-container {
+        width: 760px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+
+        .product-card {
+            height: 425px;
+            width: 375px;
+
+            .product-card-img {
+                height: 298px;
+                width: 372px;
+            }
+        }
+    }
+
+    .core-header {
+        padding: 5px 3% 0 3%;
+
+        .core-header-pages {
+            .order-pages {
+                ul {
+                    padding-left: 0;
+                }
+            }
+        }
+
+        .core-header-title {
+            text-align: start;
+        }
+
+        .core-header-order-filter {
+            justify-content: end;
+        }
+    }
+
+
+}
+
+// 970
+@media (min-width: 970px) {
+    nav {
+        height: 105px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+
+        .nav-logo {
+            height: 105px;
+            justify-content: start;
+            padding-left: 10%;
+        }
+
+        .nav-links {
+            height: 105px;
+            width: 400px;
+            padding: 0;
+
+            ul {
+                gap: 7%;
+            }
+        }
+
+        .nav-menu {
+            .nav-menu-icons {
+                height: 105px;
+                flex-direction: row;
+                justify-content: end;
+                padding-right: 10%; //ver
+
+                .nav-search {
+                    margin-bottom: 0;
+                }
+
+                .nav-icons {
+                    gap: 0px;
+                    padding-left: 5px;
+                }
+            }
+        }
+    }
+
+    //index
+    .core-container {
+        .index-banner {
+            background-position: 45% 0%;
+        }
+    }
+}
+
+// 1160px
+@media (min-width: 1180px) {
+
+    //calzado
+    .product-gallery-container {
+        width: 1145px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    //product-detail
+    .core-container {
+        .product-detail-container {
+            height: 675px;
+            max-width: 1200px;
+            margin: 2% 0 2% 0;
+            flex-direction: row;
+
+            .product-detail-container-gallery-img {
+                height: 675px;
+                width: 100%;
+                margin: 2% 0 2% 0;
+
+                .product-detail-gallery {
+                    height: 570px;
+                    width: 100px;
+                    gap: 1%;
+
+                    .product-detail-gallery-box {
+                        height: 77px;
+                        width: 82px;
+
+                        img {
+                            height: 100%;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+            .product-detail-img {
+                height: 570px;
+                width: 700px;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+
+            .product-detail-container-description {
+                height: 675px;
+                width: 500px;
+                margin: 2% 0 2% 0;
+
+                .product-detail-description {
+                    height: 570px;
+                    width: 306px;
+
+                    .product-detail-description-text {
+                        height: 130px;
+                        width: 100%;
+
+                        .product-detail-description-text_title {
+                            height: 30px;
+                            width: 100%;
+                            margin-bottom: 0;
+                        }
+
+                        .product-detail-description-text_description {
+                            height: 80px;
+                            width: 100%;
+                            margin-left: 5px;
+                        }
+
+                        .product-detail-description-text_price {
+                            height: 20px;
+                            width: 100%;
+                            margin-left: 5px;
+                        }
+                    }
+
+                    .product-detail-description-talles {
+                        margin: 5% 0 5% 0;
+                        height: 250px;
+                        width: 305px;
+
+                        .product-detail-description-talles_title {
+                            height: 20px;
+                            width: 100%;
+                            font-size: 15px;
+                        }
+
+                        .product-detail-description-talles_numero {
+                            height: 215px;
+                            width: 292px;
+                            gap: 1%;
+                            margin-left: 1.80%;
+
+                            input {
+                                height: 50px;
+                                width: 70px;
+                            }
+                        }
+                    }
+
+                    .product-detail-description-talles_buyit_end_section {
+                        height: 157px;
+                        justify-content: space-between;
+
+                        .product-detail-description-talles_buyit_button {
+                            height: 70px;
+                            width: 100%;
+                            margin-top: 5%;
+
+                            input {
+                                height: 50px;
+                                width: 100%;
+
+                                &:hover {
+                                    background-color: rgba(48, 48, 48, 0.918)
+                                }
+                            }
+                        }
+
+                        .publicity-box {
+                            height: 50px;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// 1550
+@media (min-width: 1550px) {
+
+    //index
+    .core-container {
+        .index-banner {
+            background-position: 35% 0%;
+        }
+
+        .index-carousel-container {
+            .index-carousel {
+                .product-card {
+                    height: 425px;
+                    width: 375px;
+                }
+            }
+        }
+    }
+
+    .product-gallery-container {
+        width: 1530px;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+        align-items: center;
+    }
+}
+
+// 1920
+@media (min-width: 1920px) {
+
+    //index
+    .core-container {
+        .index-banner {
+            background-position: 0% 0%;
+        }
+    }
+}
+
+// 1920+
+@media (min-width: 1980px) {
+
+    //index
+    .core-container {
+        .index-banner {
+            background-size: cover;
+            background-position: 0% 50%;
+        }
+    }
+}
